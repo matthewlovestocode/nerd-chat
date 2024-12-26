@@ -1,0 +1,26 @@
+{
+  "name": "nerd-chat",
+  "main": "index.js",
+  "pear": {
+    "name": "nerd-chat",
+    "type": "terminal"
+  },
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "pear run -d .",
+    "test": "brittle test/*.test.js"
+  },
+  "devDependencies": {
+    "brittle": "^3.0.0",
+    "pear-interface": "^1.0.0"
+  },
+  "dependencies": {
+    "b4a": "^1.6.7",
+    "bare-process": "^4.0.0",
+    "bare-readline": "^1.0.6",
+    "bare-tty": "^5.0.1",
+    "hypercore-crypto": "^3.4.2",
+    "hyperswarm": "^4.8.4"
+  }
+}
