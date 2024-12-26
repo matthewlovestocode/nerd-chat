@@ -52,7 +52,7 @@ rl.on('data', line => {
   sendMessage(line)
   rl.prompt()
 })
-rl.prompt('name?')
+rl.prompt()
 
 rl.on('close', () => {
   process.kill(process.pid, 'SIGINT')
