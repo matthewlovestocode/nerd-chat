@@ -10,12 +10,6 @@ import readline from 'bare-readline'  // Module for reading user input in termin
 import tty from 'bare-tty'            // Module to control terminal behavior
 import process from 'bare-process'    // Process control for Bare
 
-const randoBuffer = crypto.randomBytes(32);
-const rando = b4a.toString(randoBuffer, 'hex');
-
-console.log('rando: ', rando);
-
-
 const { teardown, config, updates } = Pear    // Import configuration options, updates and cleanup functions from Pear
 const key = config.args.length ? config.args[0] : undefined;       // Retrieve a potential chat room key from command-line arguments
 const shouldCreateSwarm = !key      // Flag to determine if a new chat room should be created
